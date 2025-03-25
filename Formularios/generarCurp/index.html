@@ -1,12 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generar Curp</title>
-  <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Generar Curp</title>
 </head>
 <body>
     <h1 class="titulo">Generar Curp</h1>
-
     <!--Formulario-->
     <main class="contenedor">
         <form class="formulario">
@@ -31,17 +32,17 @@
                     </div>
                     <div class="campo">
                         <label for="">Hombre</label>
-                         <input type="radio" name="genero" required>
+                         <input type="radio" name="genero" value="H" required>
 
                          <label for="">Mujer</label>
-                         <input type="radio" name="genero" required>
+                         <input type="radio" name="genero" value="M" required>
                     </div>
                       <div class="campo">
                         <label for="">Entidad Federativa</label>
                         <input class="input-text" id="entidadFedIn" type="text" placeholder="Entidad Federativa" minlength="5" maxlength="40" required>
                     </div>
                     <div class="boton">
-                         <input class="boton w-sm-100" type="button" value="Enviar" onclick="obtenerDatos()">
+                         <input class="boton w-sm-100" type="button" value="Enviar" onclick="generarCurp()">
                     </div>
                 </div>
             </fieldset>
