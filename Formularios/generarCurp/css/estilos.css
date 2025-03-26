@@ -148,3 +148,7 @@ input[type="radio"] {
     height: 18px;
     accent-color: var(--secundario); /* Cambia el color del radio button */
 }
+
+.input-text:invalid {
+    border-color: red;
+}
