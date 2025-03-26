@@ -131,3 +131,20 @@ input[type="radio"]:checked + label {
     font-weight: bold;
     color: var(--secundario);
 }
+
+.campo-radio {
+    display: flex;
+    gap: 2rem; /* Espacio entre opciones */
+}
+
+.campo-radio div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre radio y label */
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--secundario); /* Cambia el color del radio button */
+}
