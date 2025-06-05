@@ -1,34 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades - Programació Web</title>
+    <title>Actividades - Programación Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <main>
-        <h1>Actividades - Programación Web</h1>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-laptop-code"></i> Actividades - Programación Web</h1>
+            <p>Mis prácticas del semestre</p>
+        </header>
 
-        <h2>HTML</h2>
-        <ul>
-            <li><a href="practicasHTML/holaMundo/holaMundo.html">Hello World</a></li>
-            <li><a href="#">Cabecera (PENDIENTE)</a></li>
-            <li><a href="#">Vista Preliminar de Página Web (PENDIENTE)</a></li>
-            <li><a href="html5-semantic-tags/index.html">Semantic Tags</a></li>
-        </ul>
+        <main class="main-content">
+            <section class="category">
+                <h2><i class="fab fa-html5"></i> HTML</h2>
+                <ul class="activity-list">
+                    <li><a href="practicasHTML/holaMundo/holaMundo.html" class="completed"><i class="fas fa-check-circle"></i> Hello World</a></li>
+                    <li><a href="practicasHTML/holaMundo/cabecera.html" class="completed"><i class="fas fa-check-circle"></i> Cabecera</a></li>
+                    <li><a href="#" class="pending"><i class="fas fa-hourglass-half"></i> Vista Preliminar de Página Web (PENDIENTE)</a></li>
+                    <li><a href="html5-semantic-tags/index.html" class="completed"><i class="fas fa-check-circle"></i> Semantic Tags</a></li>
+                </ul>
+            </section>
 
-        <h2>CSS</h2>
-        <ul>
-            <li><a href="#">Monalisa (PENDIENTE)</a></li>
-            <li><a href="practicasCSS/index.html">Modelo Caja</a></li>
-            <li><a href="practicasCSS/Flexbox/flexbox.html">Flexbox</a></li>
-            <li><a href="practicasCSS/gridlayout/index.html">Grid Layout</a></li>
-            <li><a href="practicasCSS/formBasico/formulario.html">Formulario Básico</a></li>
-            <li><a href="practicasCSS/formValidaciones/form_validado.html">Formulario con Validacion</a></li>
-        </ul>
-    </main>
+            <section class="category">
+                <h2><i class="fab fa-css3-alt"></i> CSS</h2>
+                <ul class="activity-list">
+                    <li><a href="practicasCSS/monalisa/index.html" class="completed"><i class="fas fa-check-circle"></i> Monalisa</a></li>
+                    <li><a href="practicasCSS/index.html" class="completed"><i class="fas fa-check-circle"></i> Modelo Caja</a></li>
+                    <li><a href="practicasCSS/Flexbox/flexbox.html" class="completed"><i class="fas fa-check-circle"></i> Flexbox</a></li>
+                    <li><a href="practicasCSS/gridlayout/index.html" class="completed"><i class="fas fa-check-circle"></i> Grid Layout</a></li>
+                    <li><a href="practicasCSS/formBasico/formulario.html" class="completed"><i class="fas fa-check-circle"></i> Formulario Básico</a></li>
+                    <li><a href="Formularios/generarCurp/index.html" class="completed"><i class="fas fa-check-circle"></i> Formulario con Validación</a></li>
+                </ul>
+            </section>
+
+            <section class="category">
+                <h2><i class="fab fa-js-square"></i> JavaScript</h2>
+                <ul class="activity-list">
+                    <li><a href="practicaJS/holaMundo/holaMundo.html" class="completed"><i class="fas fa-check-circle"></i> Hola JS</a></li>
+                    <li><a href="practicaJS/arraysAsociativos/index.html" class="completed"><i class="fas fa-check-circle"></i> Arrays Basados en Índices Asociativos</a></li>
+                    <li><a href="practicaJS/comparaMayor.html" class="completed"><i class="fas fa-check-circle"></i> Funciones</a></li>
+                    <li><a href="practicaJS/POO/index.html" class="completed"><i class="fas fa-check-circle"></i> POO y objetos</a></li>
+                    <li><a href="practicaJS/ClasesJS/index.html" class="completed"><i class="fas fa-check-circle"></i> Uso de Clases</a></li>
+                    <li><a href="practicaJS/dadosJS/index.html" class="completed"><i class="fas fa-check-circle"></i> Juego de Dados</a></li>
+                    <li><a href="#" class="pending"><i class="fas fa-hourglass-half"></i> Uso de DOM</a></li>
+                    <li><a href="procesaXML/index.html" class="completed"><i class="fas fa-check-circle"></i> Uso de XHR o Fetch</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© <span id="year"></span> - Mis prácticas de programación web</p>
+        </footer>
+    </div>
+
+    <script>
+        // Añadir el año actual al footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
